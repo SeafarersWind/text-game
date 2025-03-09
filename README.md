@@ -6,4 +6,4 @@ This project has lived most of its life in conceptualization by now. The systems
 
 The current version is a broken and unwieldy combat scenario where the player can control both combatants. There are a number of elements that influence the hit conditions and damage output, with no randomization involved. These elements are still primitive and obtuse.
 
-Previous versions are in the Archive folder. Version "1" was written for Linux, and proceeding versions were written for Windows. The most developed version is probably "6 Huefvul Road", which features an explorable town and a travel segment with functional enemy encounters.
+Previous versions are in the Archive folder. Version "1" was written for Linux, and proceeding versions were written for Windows. The most developed version is probably "6 Huefvul Road", which features an explorable town and a travel segment with functional enemy encounters. Version "0" contains the latest Java version I wrote in 2017, which I updated in 2024 to be more functional. "play.bat" should run the game if Java is installed.
