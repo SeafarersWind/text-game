@@ -1,0 +1,9 @@
+Prefixes:
+ fFunction
+ tText
+ pPointer
+ hHandle
+ 
+ -tTown
+ -rRoad
+ sSight

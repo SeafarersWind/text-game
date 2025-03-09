@@ -1,0 +1,64 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+push  edx
+push  ecx
+push  ebx
+push  eax
+push  MgHello
+call  FnPrintstr
+pop   eax
+pop   ebx
+pop   ecx
+pop   edx
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+push  edx
+push  ecx
+push  ebx
+push  eax
+push  eax
+mov   eax,MgHex32num
+call  FnPrint
+pop   eax
+pop   ebx
+pop   ecx
+pop   edx
+
+
+
+FUNCTIONS
+
+FnStartup
+ uses eax
+
+FnPrint
+ eax string to print
+ [esp+4] special print parameters
+ uses eax,ebx,others*
+
+FnPrintdec
+ dword[esp+4] number to print in decimal
+ uses eax,ebx,ecx,edx
+
+FnPrinthex32
+ dword[esp+4] number to print in hexidecimal
+ uses eax,ebx,cl,edx
+
+FnPrintbin32
+ dword[esp+4] number to print in binary
+ uses eax,ebx,cl,edx
+
+FnPrinthex16
+ word[esp+4] number to print in hexidecimal
+ uses ax,ebx,cl,dx
+
+FnPrintbin16
+ word[esp+4] number to print in binary
+ uses ax,ebx,cl,dx
+
+FnPrinthex8
+ byte[esp+4] number to print in hexidecimal
+ uses ax,ebx,cl
+
+FnPrintbin8
+ byte[esp+4] number to print in binary
+ uses ax,ebx,cl

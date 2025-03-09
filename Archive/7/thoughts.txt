@@ -1,0 +1,153 @@
+ Monsters
+Gokeblin
+
+
+
+ Weapon
+SSmmwwss
+aaaaaaaa
+
+S: shape
+m: material
+w: weight
+s: sharpness
+a: aspect
+
+SSmmwwss:
+00. rock
+01. polearm
+02. sword
+  00. flesh
+  01. bone
+  02. wood
+  03. stone
+  04. iron
+
+
+
+ Move
+handle
+motion
+approach
+
+
+
+ Force
+SSsswwvv
+mmiiddtt
+
+S: shape
+s: sharpness
+w: wieght
+v: velocity
+m: material
+i: intensity
+d: direction
+t: speed
+
+SSsswwvv:
+00. Punch
+01. Stab
+02. Cut
+
+
+
+ Stats
+health
+stead
+skin
+anatomy
+position
+
+
+
+ Sight
+t
+0. sight
+  iiii
+  i: id
+8. world flag condition
+  aaaaffmm
+ a: address
+ f: flags
+ m: jump
+
+
+
+
+ Vision
+00. end
+01. text
+  tttttttt
+  t: text
+02. set flag
+03. reset flag
+  ffaaaa
+  a: address
+  f: flags
+8. fighter flag condition
+ mvvaaaa
+ a: address
+ f: flags
+ m: jump
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  again
+  
+  
+  
+  
+  
+  
+  
+  
+  Sight
+   Condition
+   Id
+  
+  Vision
+   Content
+    Condition
+    Text
+    Flag
+    End

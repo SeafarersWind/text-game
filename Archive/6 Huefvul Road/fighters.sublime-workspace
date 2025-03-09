@@ -1,0 +1,417 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Fighters",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Batch",
+					""
+				],
+				[
+					"Batch",
+					"Run"
+				],
+				[
+					"Packages/NASM x86 Assembly/NASM.sublime-build",
+					""
+				]
+			],
+			[
+				"Batch",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Fighters",
+					""
+				],
+				[
+					"Fighters",
+					"Run"
+				],
+				[
+					"Packages/NASM x86 Assembly/NASM.sublime-build",
+					""
+				]
+			],
+			[
+				"Fighters",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Figters",
+					""
+				],
+				[
+					"Figters",
+					"Run"
+				],
+				[
+					"Packages/NASM x86 Assembly/NASM.sublime-build",
+					""
+				]
+			],
+			[
+				"Figters",
+				"Run"
+			]
+		],
+		[
+			[
+				[
+					"Figters",
+					""
+				],
+				[
+					"Packages/NASM x86 Assembly/NASM.sublime-build",
+					""
+				]
+			],
+			[
+				"Figters",
+				""
+			]
+		],
+		[
+			[
+				[
+					"ROS",
+					""
+				],
+				[
+					"ROS",
+					"Run"
+				],
+				[
+					"Packages/NASM x86 Assembly/NASM.sublime-build",
+					""
+				]
+			],
+			[
+				"ROS",
+				""
+			]
+		],
+		[
+			[
+				[
+					"Run Batch",
+					""
+				],
+				[
+					"Packages/NASM x86 Assembly/NASM.sublime-build",
+					""
+				]
+			],
+			[
+				"Run Batch",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Advanced Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 131.199996948,
+		"history":
+		[
+			"help",
+			"run",
+			"a",
+			"g",
+			"a"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Seafarer/Projects/Fighters/Now"
+	],
+	"file_history":
+	[
+		"/C/Users/Seafarer/Projects/Fighters/Now/field.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/data.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/land.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/common.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/debugstuff.txt",
+		"/C/Users/Seafarer/Projects/Fighters/Now/game.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/finatural.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/battle.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/town.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/run.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/beat.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Old/4 Huevul/game.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/fighter.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Now/thoughts.txt",
+		"/C/Users/Seafarer/Projects/Fighters/Work/beat.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/data.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/fighter.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/battle.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/game.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/run.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/finatural.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/common.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/field.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/debugstuff.txt",
+		"/C/Users/Seafarer/Projects/Fighters/Work/fitest.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/land.asm",
+		"/C/Users/Seafarer/Projects/Fighters/Work/fighters.sublime-project",
+		"/C/Users/Seafarer/Projects/Fighters/Work/project.sublime-project"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 106.4,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"Random",
+			":\t\t\t\t\t\t\t\t\t",
+			"FINRtarget",
+			"fMenu",
+			"Neopolitan",
+			"fSleepd",
+			"_bufferer+9",
+			"_bufferer+8",
+			"_bufferer+4",
+			"_bufferer+",
+			"_buffer",
+			"_WriteFile@20",
+			"=",
+			"Menu=",
+			"tMenu=",
+			"tMenu_",
+			".valid",
+			"fPrintst",
+			" \n",
+			"eac",
+			"fMenu1",
+			"fMenu",
+			"L",
+			"fSleep",
+			"FDfGetconscioushostilewithfighters:",
+			"0",
+			"fPrint:",
+			"fSleep",
+			"Random",
+			"fSleep",
+			"DTFI",
+			"input",
+			";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;",
+			"fPrintchar",
+			"sleep",
+			"fShutdown",
+			"place",
+			"fPrintstr",
+			"fSleep",
+			"fShutdown",
+			"L1",
+			"five",
+			"clss",
+			"BA.FI",
+			"%file%",
+			"BT",
+			".f",
+			".b",
+			"fPrintchar",
+			"_FlushFileBuffers",
+			"_Sleep",
+			"_ReadFile",
+			"_WriteFile",
+			"_GetStdHandle",
+			"_ExitProcess",
+			"dRngseed",
+			"_Writefile",
+			"_Stdinput",
+			"_Stdoutput",
+			"ReadBuffer",
+			"fPrintbaseString",
+			"FnPrintbaseString",
+			"PS",
+			"scanLs",
+			"esp",
+			"  \n",
+			"IOBuffer",
+			"ReadBuffer",
+			"IOBuffer"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"Neapolitan",
+			"_bufferer+5",
+			"_bufferer+4",
+			"N",
+			"MenuN",
+			"tMenua",
+			"fMenu",
+			"dFI",
+			"FDf",
+			"[filename]",
+			"BA",
+			".FI",
+			".",
+			"_FlushFileBuffers@4",
+			"_Sleep@4",
+			"_ReadFile@20",
+			"_WriteFile@20",
+			"_GetStdHandle@4",
+			"_ExitProcess@4",
+			"_nRngseed",
+			"_WriteFile",
+			"_hStdinput",
+			"_hStdoutput",
+			"SP"
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.2
+	},
+	"input":
+	{
+		"height": 178.4
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 127.2
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "fighters.sublime-project",
+	"replace":
+	{
+		"height": 51.2
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

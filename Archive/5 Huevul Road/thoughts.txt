@@ -1,0 +1,8 @@
+menu
+
+4 text
+ str
+
+4 action
+ return value
+ submenu

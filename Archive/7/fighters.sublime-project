@@ -1,0 +1,24 @@
+{
+  "build_systems":
+  [
+    {
+      "name" : "Fighters",
+      "cmd" : ["$project_path/build.bat"],
+      "working_dir" : "$project_path",
+  
+      "variants" : [
+        {
+          "name" : "Just run",
+          "cmd" : ["$project_path/run.bat"]
+        }
+      ]
+    }
+  ],
+  
+  "folders":
+  [
+    {
+      "path": "."
+    }
+  ],
+}

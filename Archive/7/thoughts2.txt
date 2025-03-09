@@ -1,0 +1,391 @@
+
+ push edx
+ push ecx
+ push ebx
+ push eax
+ mov  eax,tHello
+ call fPrint
+ pop  eax
+ pop  ebx
+ pop  ecx
+ pop  edx
+ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+ push edx
+ push ecx
+ push ebx
+ push eax
+ push 
+ mov  eax,tBin8
+ call fPrint
+ pop  eax
+ pop  ebx
+ pop  ecx
+ pop  edx
+ ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; get a name
+   mov  ebx,pFINM								 ;; eax fighter
+   xor  ecx,ecx									 ;;
+   mov  al,FINAME								 ;;
+   mov  cx,[eax]								 ;;
+   shl  ecx,2									 ;;
+   add  ebx,ecx									 ;;
+   mov  eax,[ebx]								 ;;
+   call fPrint									 ;;
+
+
+
+
+
+Preturn
+ do Options
+
+Turn
+ do Effect
+
+Hit
+ do Effect
+
+
+Option
+ Effect
+ (p)Text
+ (p)Char
+
+Effect
+ Message
+ ???
+
+
+Every fighter, whether AI- or Player-controlled, will construct a set of options.
+Afterwards they will select an option, at which process AI- and Player-controlled fighters diverge.
+
+How are options constructed by fighters? How are they stored?
+Put them in stack or static
+How large can a menu be
+(1)Attack (2)Bag (3)Run (4)defend (5)ru (6)bees (7)more (8)act (0)End
+(1)Gob (2)Slimey (3)Skel
+(1)Rope (2)Bread (3)Bread (4)Bomb
+(1)fast (2)slow
+(1)defend (2)defend
+(1)ra (2)ri (3)ro (4)ry (5)rr (6)re (7)rp (8)ruu (9)rd (.)
+(1)bzzzzz (2)zzz (3)zzzzz (4)zzzzzz (5)zzzzzz
+(1)more (2)more (3)more (4)more (5)more (6)more (7)more (8)I need more
+(1)ct (2)do
+
+construct options
+<select option
+-
+<construct and select option
+-
+
+use weapon on him						; 01 00 00 01
+use strike with weapon on him			; 01 01 00 01
+defend with weapon against those two	; 02 00 00 03
+throw a potion from bag at him			; 03 00 00 01   04 01 00 01
+throw a potion from bag on the ground	; 03 00 00 01   04 01 00 00
+rumage through bag for potion			; 03 00 00 01
+dodge his attack						; 05 00 00 01
+retreat from those three				; 06 00 00 07
+retreat from encounter					; 06 00 00 00
+tell him to retreat						; 07 05 00 01
+tell everyone to retreat				; 07 05 00 00
+engage with those two					; 08 00 00 03
+protect him								; 08 01 01 00
+protect him from those two				; 08 01 01 03
+aid him against those two				; 08 01 01 03
+kill him								; 08 02 00 01
+parry his attack						; 02 01 00 01
+get up									; 09 00 00 00
+unsheathe weapon						; 09 01 00 00
+kick him								; 01 01 00 01
+sheathe weapon							; 09 02 00 00
+knock him down							; 08 03 00 01
+finish him off							; 08 04 00 01
+surrender								; 07 06 00 00
+pick up weapon							; 03 00 00 01
+pick up item							; 03 00 00 01
+throw off bag							; 04 10 00 00
+talk to him								; 0A 00 00 01
+loot body								; 03 01 00 01
+loot bag								; 03 02 00 01
+pray									; 0A 00 00 00
+watch for threats						; 0B 02 00 00
+observe him								; 0B 00 00 01
+study him								; 0B 01 00 01
+observe surroundings					; 0B 00 00 00
+meditate								; 0B 03 00 00
+look around								; 0B 00 00 00
+find him								; 0C 00 00 01
+find it									; 0C 00 00 02
+hide from those four					; 0D 00 00 0F
+hide from threats						; 0D 00 00 00
+
+
+Attacking		Type	---		Target
+Defending		Type	---		Target
+Rumaging		Object	---		Item
+Throwing		Object	---		Target
+Dodging			----	---		Target
+Retreating		----	---		Target
+Communicating	Info	---		Target
+Engaging		Focus	Subject	Target
+Readying		Action	---		---
+Communicating	----	---		Target
+Looking			Focus	---		Target
+Seeking			----	---		Target
+Hiding			----	---		Target
+
+
+(1)Punch (2)Guard (3)Sword (4)Bag (5)Out (0)Look :3
+
+(1)Strike (2)Guard (3)Bag (5)Out (0)Look :1
+(1)Moth (2)Moth (3)Centipede :3
+
+!!!
+
+(1)Strike (2)Guard (3)Bag (5)Out (0)Look :5
+
+(1)Moths (2)Books (3)Ants (0)Look :
+
+
+1. State
+   Engaged
+ 2. Weapon
+    Hand
+  3. Moves
+     ???
+    Sword
+  3. Moves
+     ???
+    +++
+ 4. Equip Belt
+ 5. Equip Back
+ 6. Equip Bag
+ 7. Natural
+   Disengaged
+ 2. Groups
+ 3. Natural
+   +++
+
+
+
+Abby runs against the skell.
+It attacks, she steps out of the way.
+It swings again, and she closes in and slashes its shoulder.
+The skell's arm falls off and Abby dodges another attack.
+The arm rattles as it tries to reach for Abby.
+Abby lunges her sword at the skell's remaining shoulder, but the skell swings its arm the other way and it mauls into her side.
+Abby stumbles and the skell grasps her arm.
+Its crushing grip tightens as she struggles franticly.
+She brings her sword down on the arm while a kick bludgeons into her stomach.
+She falls back, winded, and the severed hand keeps its death grip on her arm as the other hand siezes her ankle.
+She clambers to her feet and her eyes are scorched with dread and fury.
+A second kick lands on her side, but she sustains her footing. Her captured ankle bleeds harder.
+She whirls her sword at the skell and intercepts another kick.
+Ribcage and spine split and fall onto legs. Abby crutches herself back up with her one free leg.
+She raises her sword above herself. The legs violently kick in everry direction. She brings the sword down inside the skull. 
+The skell's hands slide off her arm and roll off her ankle. She gets up. Her ankle and arm burn where the hands were.
+A gaping exhale of rubble rests in the skull.
+Abby limps away from the broken skell.
+She collapses.
+She tries to recover her wind.
+
+
+
+Skell approaches.
+
+(1)Approach (2)Leave (3)Wait :1
+
+Abby runs against the Skell!
+
+The Skell starts swinging its arms
+
+-------
+(1)Attack (2)Guard (3)Evade (4)Observe :3
+
+Skell's arm hurls at Abby!
+Miss!
+
+------
+(1)Attack (2)Guard (3)Evade (4)Observe :1
+
+Skell's arm hurls at Abby!
+Miss!
+
+Abby attacks Skell's shoulder!
+The blade cuts through!
+
+---
+(1)Attack (2)Guard (3)Evade (4)Observe :3
+
+Skell swings its other arm!
+Miss!
+
+The severed arm reaches for Abby
+
+----
+(1)Attack (2)Guard (3)Evade (4)Observe :1
+
+Abby lunges her sword at Skell!
+Miss!
+
+Skell hurls its arm at Abby!
+It mauls into Abby's side!
+
+-
+(1)Attack (2)Guard (3)Evade (4)Observe :3
+
+Skell grasps Abby's arm!
+It's crushing Abby's arm!
+
+--
+(1)Attack (2)Guard (3)Evade (4)Observe :1
+
+Abby hurls her sword at Skell's arm!
+The blade cuts through!
+
+A kick hurls into Abby's stomach!
+It winds Abby!
+
+
+(1)Get up (2)Attack (3)Guard (4)Observe :1
+
+The severed hand tightens its grip on Abby's arm
+It hurts!
+
+The other severed arm grabs Abby's ankle!
+It's crushing Abby's ankle!
+
+Abby stands up
+It hurts
+
+----
+(1)Attack (2)Guard (3)Evade (4)Observe :2
+
+Skell throw a kick at Abby!
+It hits Abby's side!
+
+The severed hand tightens its grip on Abby's ankle
+It hurts!
+
+---
+(1)Attack (2)Guard (3)Evade (4)Observe :1
+
+Abby hurls her sword at Skell!
+It tears Skell's spine!
+
+Skell tumbles down
+
+
+(1)Get up (2)Attack (3)Guard (4)Observe :1
+
+Abby stands up on her free leg
+
+The severed hand tightens its grip on Abby's arm
+It hurts!
+
+Skell is in pieces on the ground
+
+---
+(1)Attack (2)Guard (3)Evade (4)Observe :1
+
+Skell's legs throw a kick at Abby!
+Abby is out of reach
+
+Abby brings her sword down on Skell's skull!
+It is crushed.
+
+The severed hand falls off Abby's arm
+
+The severed hand falls off Abby's ankle
+
+(1)Get up (2)Observe :1
+
+Abby stands up
+
+Abby's ankle burns
+Abby's arm burns
+Abby is winded
+
+(1)Leave (2)Observe :2
+
+The broken skell sits below Abby and a gaping exhale of rubble rests in its skull
+
+(1)Leave :1
+
+Abby limps away from the skell
+
+Abby collapses
+
+(1)Wait :
+
+
+
+Abby runs against the skell
+
+-------
+(1)At (2)Df (3)Ev (4)Lk :3
+
+
+
+
+
+
+
+
+
++red arm crushes Abby's arm!
+Abby attacks!
+The skell's arm falls off!
+The skell attacks!
+Abby is hit!
+
+-
+(1)Attack (2)Guard (3)Evade (4)Watch :4
+
+The severed arm crushes Abby's arm!
+The other severed arm grabs Abby's ankle!
+Abby gets up!
+The skell is cackling as it kicks Abby!
+Abby remains up!
+
+----
+(1)Attack (2)Guard (3)Evade (4)Watch :1
+
+Abby attacks!
+The skell attacks!
+The skell's spine splits apart!
+
+--
+(1)Attack (2)Guard (3)Evade (4)Watch :1
+
+The severed legs kick wildly!
+Abby attacks!
+The skell's skull is crushed!
+
+(1)Leave (2)Wait :1
+
+Abby limps away.
+
+Abby collapses.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

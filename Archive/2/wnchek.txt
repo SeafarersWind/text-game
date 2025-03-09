@@ -1,0 +1,23 @@
+Check each fighter to see if any other fighters are hostile with them
+ eax fighter1
+ if fighter1 is unconscious, skip figher1
+ go through each figther1 and perform indexperform()
+  indexperform(data, size, count, function, [args])
+
+Check each fighter to see if they are hostile with fighter2
+ ebx fighter2
+ if fighter2 is unconscious, skip fighter2
+ go through each fighter2 and perform flagcheck()
+  indexperform(data, size, count, function, [args])
+
+if fighter2 is fighter1, skip fighter2
+  check if fighter2's hostile flags match with fighter1's index
+    flagcheck(flags, index)
+
+if fighter2 is hostile with fighter2, the fight continues
+
+skip fighter2
+if fighter2 is not the last fighter, loop
+
+skip fighter1
+if fighter1 is not the last fighter, loop

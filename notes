@@ -1,0 +1,140 @@
+
+
+
+
+miss
+hit
+hurt
+parry
+evade
+
+
+
+
+
+
+
+
+motion (in/out)
+range
+speed
+precision
+power
+sharpness
+foresight
+deceit
+
+distance
+posture
+stamina
+health
+equipment
+
+reflex
+might
+fortitude
+endurance
+perception
+aim
+intuition
+moveset/strategy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+motion: changes the fighter's distance from their opponent.
+range: distance from opponent from which the attack can connect.
+speed: raises the ability to evade. lowers the opponent's ability to evade or parry. scales with a fighter's posture.
+power: deals heavy damage to opponent's posture and health. lowers the opponent's ability to parry. usually costly on posture.
+sharpness: the amount of damage the opponent takes when an attack connects. a fighter can be vulnerable to specific damage types (e.g. stabbing or slashing).
+
+
+reflex: higher speed
+might: powerful attacks cost less posture
+fortitude: higher resistance to power
+endurance: higher stamina
+
+
+
+
+Sword
+ slash
+  posture loss: 1
+  motion: -1 - 1
+  range: 1-2
+  speed: 4
+  block: 3
+  power: 3
+  sharpness: 3 slash
+ stab
+  posture loss: 2
+  motion: 0 - 2
+  range: 2-3
+  speed: 4
+  block: 2
+  power: 3
+  sharpness: 4 pierce
+ lunge
+  posture loss: 5
+  motion: 2 - 3
+  range: 1-3
+  speed: 2
+  block: 1
+  power: 7
+  sharpness: 4 pierce 4 slash
+ guard
+  posture gain: 3
+  motion: -2 - 1
+  range: 1
+  speed: 5
+  block: 5
+  power: 0
+  sharpness: 0
+
+
+
+
+
+DISTANCE =  current distance  +  a.mMotion  +  d.mMotion
+xRANGE   =  x.mRange
+xSPEED   =  x.mSpeed  *  x.reflex  *  x.posture
+xBLOCK   =  x.mBlock  *  x.posture
+xPOWER   =  x.mPower
+xSHARP   =  x.mSharpness
+
+xHIT    = 0
+xPARRY  = 0
+
+
+EVADE/MISS
+HIT/HURT
+PARRY/BREAK
+
+
+if DISTANCE is within aRANGE,
+ aHIT  = aSPEED*1.5 - dSPEED + 1
+ aPARRY = aBLOCK - dPOWER
+else,
+ HIT = 0
+ PARRY = 0
+
+if aHIT > dPARRY,
+ dDAMAGE = aSHARP * (aHIT + aPOWER)/2
+ dTOPPLE = aHIT * aPOWER*k
+else,
+ aTOPPLE = dPOWER
